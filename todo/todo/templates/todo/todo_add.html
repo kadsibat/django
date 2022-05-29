@@ -1,0 +1,28 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+<<<<<<< HEAD
+     <h2>TODO Add</h2>
+     <hr>
+
+     <form action="" method="POST">
+         {% csrf_token %}
+         {{form.as_p}}
+         <input type="submit" value="add">
+     </form>
+
+
+{% endblock content %}
+    
+=======
+
+<h2>TODO Add</h2>
+<hr>
+
+<form action="" method = "POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit", value="Add">
+</form>
+{% endblock content %}
+>>>>>>> 43779547f62600caefec0fad8d720af6d9000752

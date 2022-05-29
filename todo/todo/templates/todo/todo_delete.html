@@ -1,0 +1,31 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+<<<<<<< HEAD
+    <h2>TODO delete</h2>
+    <hr>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        are you sure for delete {{todo}}
+        <input type="submit" value="yes">
+    </form>
+
+{% endblock content %}
+    
+=======
+
+<h2>TODO Delete</h2>
+<hr>
+
+<form action="" method = "POST">
+    {% csrf_token %}
+    Are you sure for delete {{todo}} ?
+    <input type="submit", value="Yes">
+</form>
+
+<button><a href = "{% url 'list'  %}">No</a> </button>
+
+
+{% endblock content %}
+>>>>>>> 43779547f62600caefec0fad8d720af6d9000752
